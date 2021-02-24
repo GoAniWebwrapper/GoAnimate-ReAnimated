@@ -99,7 +99,7 @@ module.exports = function (req, res, url) {
 			break;
 		}
 
-		case "/videomaker/full": {
+		case "/go_full": {
 			let presave =
 				query.movieId && query.movieId.startsWith("m")
 					? query.movieId
