@@ -104,7 +104,7 @@ module.exports = function (req, res, url) {
 				apiserver: "/",
 				storePath: process.env.STORE_URL + "/<store>",
 				clientThemePath: process.env.CLIENT_URL + "/<client_theme>",
-				userId: "0MkbIhl0ecnE","username":"T Series 2019","uemail":"epictubehelp@gmail.com",
+				userId: "0MkbIhl0ecnE",
 				isEmbed: 0,"nextUrl":"/html/list.html",
 				bgload: process.env.SWF_URL + "/go_full.swf","lid":"11","ctc":"go","themeColor":"silver",
 				tlang: "en_US","siteId":"13","templateshow":"false","forceshow":"false","appCode":"go","lang":"en","tmcc":4048901,
