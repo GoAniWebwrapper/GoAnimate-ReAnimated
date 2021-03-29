@@ -101,11 +101,14 @@ module.exports = function (req, res, url) {
 			};
 			params = {
 				flashvars: {
-				'apiserver': '/', 'storePath': process.env.STORE_URL + '/<store>', 'isEmbed': 1, 'ctc': 'go',
-					'ut': 30, 'u_info': 'OjI6a2JxQzN0MFNSKzFTYW4wTENRc01PZ2N6TURkZ0J3OWFmTzRjeW9aS3l1ak04MCtnUE5CUFo3Y0hmT0JDZndlMDlCM1V0VVVfc05pTU41cGVHYXpKOXV4YVpPZG9icHNoMHNHZmtiWjMxRnpTYlFXNDdPNHk0PQ', 
-					'bs': 'default', 'appCode': 'go', 'page': '', 'siteId': '13', 'userId': '0DyHqK6Yj9dM', 'lid': 11, 'isLogin': 'Y',
-					'clientThemePath': process.env.CLIENT_URL + '/<client_theme>', 'themeId': 'business', 'tlang': 'en_US',
-					'presaveId': presave, 'goteam_draft_only': 1, 'isWide': 1, 'nextUrl': '/html/list.html',
+				        apiserver: "/", 
+					storePath: process.env.STORE_URL + "/<store>", 
+					isEmbed: 1, 
+					ctc: "go",
+					ut: 30, 
+					bs: "default", "appCode": "go", "page": "", "siteId": "13", "userId": "0DyHqK6Yj9dM", "lid": 0, "isLogin": "Y",
+					clientThemePath: process.env.CLIENT_URL + "/<client_theme>", "themeId": "business", "tlang": "en_US",
+				        presaveId: presave, "goteam_draft_only": 1, "isWide": 1, "nextUrl": "/html/list.html",
 				},
 			break;
 		}
