@@ -48,14 +48,14 @@
 				"Content-Type": "text/html; charset=UTF-8"
 			}
 		},
-		"/pages/html/([^?]+html).*": {
-			"contentReplace": true,
+		"/videos/([^?]+html).*": {
+			"contentReplace": false,
 			"regexLink": "pages/html/$1",
 			"headers": {
 				"Content-Type": "text/html; charset=UTF-8"
 			}
 		},
-		"/pages/html/([^?]+).*": {
+		"/videos/([^?]+).*": {
 			"regexLink": "pages/html/$1",
 			"headers": {
 				"Content-Type": "text/html; charset=UTF-8"
