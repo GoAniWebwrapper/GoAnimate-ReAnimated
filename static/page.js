@@ -104,15 +104,15 @@ module.exports = function (req, res, url) {
 				apiserver: "/",
 				storePath: process.env.STORE_URL + "/<store>",
 				clientThemePath: process.env.CLIENT_URL + "/<client_theme>",
-				userId: "0MkbIhl0ecnE","numContact":"0","ut":30,"ve":false,
+				userId: "0MkbIhl0ecnE","username":"T Series 2019","uemail":"epictubehelp@gmail.com",
 				isEmbed: 0,"nextUrl":"/html/list.html",
-				lid :"11","ctc":"go","themeColor":"silver","tlang":"en_US","siteId":"13", "appCode":"go",
-				lang: "en","tmcc":4048901,
-			        u_info :"OjI6SVkxU3FJV1BablhsMlVVeWdNelJfQTBkYTZqYWFEU0ZiMHZSRERoU0Z3TitzUUs0ZmZ1Y3FvVklsMDJFbTZWSWRtSXh5dUJRU0VQU0puVk12MlVSWFlaQkJ3OVpSQVU4R3FYeFRY",
-				free_trial :1,"tm":"FIN","tray":"custom","isWide":1,"newusr":1,"goteam_draft_only":0
-				},
-
-				allowScriptAccess: "always",
+				bgload: process.env.SWF_URL + "/go_full.swf","lid":"11","ctc":"go","themeColor":"silver",
+				tlang: "en_US","siteId":"13","templateshow":"false","forceshow":"false","appCode":"go","lang":"en","tmcc":4048901,
+				fb_app_url: "/","is_published":"0","is_private_shared":"1","is_password_protected":false,"upl":1,"hb":"1","pts":"1","msg_index":"",
+				ad: 0,"has_asset_bg":0,"has_asset_char":0,"initcb":"studioLoaded","retut":0,"featured_categories":null,
+				st: "","uisa":0,"u_info":"OjI6SVkxU3FJV1BablhsMlVVeWdNelJfQTBkYTZqYWFEU0ZiMHZSRERoU0Z3TitzUUs0ZmZ1Y3FvVklsMDJFbTZWSWRtSXh5dUJRU0VQU0puVk12MlVSWFlaQkJ3OVpSQVU4R3FYeFRY",
+				free_trial: 1,"tm":"FIN","tray":"custom","isWide":1,"newusr":1,"goteam_draft_only":0},
+	                        allowScriptAccess: "always",
 			};
 			break;
 		}
