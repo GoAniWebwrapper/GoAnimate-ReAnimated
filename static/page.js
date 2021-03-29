@@ -46,7 +46,7 @@ module.exports = function (req, res, url) {
 				flashvars: {
 			        apiserver:"/","m_mode":"school","isLogin":"Y","isEmbed":"0","ctc":"go","tlang":"en_US",
 			        storePath: process.env.STORE_URL + "/<store>",
-			        clientThemePath: process.env.CLIENT_URL + "/<client_theme>","appCode":"go","page":"","siteId":"go","userId":"0TBAAga2Mn6g","themeId":"family","ut":30,"ft":"_sticky_filter_guy"
+			        clientThemePath: process.env.CLIENT_URL + "/<client_theme>","appCode":"go","page":"","siteId":"13","userId":"0TBAAga2Mn6g","themeId":"family","ut":30,"ft":"_sticky_filter_guy"
 				},
 				allowScriptAccess: "always",
 				movie: process.env.SWF_URL + "/cc.swf", // 'http://localhost/cc.swf'
@@ -104,7 +104,7 @@ module.exports = function (req, res, url) {
 				apiserver: "/",
 				storePath: process.env.STORE_URL + "/<store>",
 				clientThemePath: process.env.CLIENT_URL + "/<client_theme>",
-				userId: "0MkbIhl0ecnE","username":"T Series 2019","uemail":"epictubehelp@gmail.com",	
+				userId: "0TBAAga2Mn6g","username":"T Series 2019","uemail":"epictubehelp@gmail.com",	
 				isEmbed: 0,"nextUrl":"/html/list.html",
 				bgload: process.env.SWF_URL + "/go_full.swf","lid":"11","ctc":"go","themeColor":"silver",
 				tlang: "en_US","siteId":"13","templateshow":"false","forceshow":"false","appCode":"go","lang":"en","tmcc":4048901,
