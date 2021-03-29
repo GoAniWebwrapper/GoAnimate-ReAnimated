@@ -101,7 +101,7 @@ module.exports = function (req, res, url) {
 			};
 			params = {
 				flashvars: {
-				        apiserver: "https://app.vyond.com",
+				        apiserver: "/",
 					storePath: process.env.STORE_URL + "/<store>",
 					isEmbed: 1,
 					ctc: "go",
@@ -110,7 +110,7 @@ module.exports = function (req, res, url) {
 					appCode: "go",
 					page: "",
 					siteId: "go",
-					lid: 11,
+					lid: 0,
 					isLogin: "Y",
 					retut: 1,
 					clientThemePath: process.env.CLIENT_URL + "/<client_theme>",
