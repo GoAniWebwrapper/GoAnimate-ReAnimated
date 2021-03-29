@@ -111,7 +111,7 @@ module.exports = function (req, res, url) {
 				fb_app_url: "/","is_published":"0","is_private_shared":"1","is_password_protected":false,"upl":1,"hb":"1","pts":"1","msg_index":"",
 				ad: 0,"has_asset_bg":0,"has_asset_char":0,"initcb":"studioLoaded","retut":0,"featured_categories":null,
 				st: "","uisa":0,"u_info":"OjI6SVkxU3FJV1BablhsMlVVeWdNelJfQTBkYTZqYWFEU0ZiMHZSRERoU0Z3TitzUUs0ZmZ1Y3FvVklsMDJFbTZWSWRtSXh5dUJRU0VQU0puVk12MlVSWFlaQkJ3OVpSQVU4R3FYeFRY",
-				free_trial: 1,"tm":"FIN","tray":"custom","isWide":1,"newusr":1,"goteam_draft_only":0},
+				professional: 1,"tm":"FIN","tray":"custom","isWide":1,"newusr":1,"goteam_draft_only":0},
 	                        allowScriptAccess: "always",
 			};
 			break;
