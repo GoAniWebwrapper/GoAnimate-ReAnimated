@@ -101,15 +101,29 @@ module.exports = function (req, res, url) {
 			};
 			params = {
 				flashvars: {
-				        apiserver: "/", 
-					storePath: process.env.STORE_URL + "/<store>", 
-					isEmbed: 1, 
+				        apiserver: "https://app.vyond.com",
+					storePath: process.env.STORE_URL + "/<store>",
+					isEmbed: 1,
 					ctc: "go",
-					ut: 30, 
-					bs: "default", "appCode": "go", "page": "", "siteId": "13", "userId": "0DyHqK6Yj9dM", "lid": 0, "isLogin": "Y",
-					clientThemePath: process.env.CLIENT_URL + "/<client_theme>", "themeId": "business", "tlang": "en_US",
-				        presaveId: presave, "goteam_draft_only": 1, "isWide": 1, "nextUrl": "/html/list.html",
+					ut: 30,
+					bs: "default",
+					appCode: "go",
+					page: "",
+					siteId: "go",
+					lid: 0,
+					isLogin: "Y",
+					retut: 1,
+					clientThemePath: process.env.CLIENT_URL + "/<client_theme>",
+					themeId: "business",
+					tlang: "en_US",
+					presaveId: presave,
+					goteam_draft_only: 1,
+					isWide: 1,
+					collab: 0,
+					nextUrl: "/html/list.html",
 				},
+				allowScriptAccess: "always",
+			};
 			break;
 		}
 
