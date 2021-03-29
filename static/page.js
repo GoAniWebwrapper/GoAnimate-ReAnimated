@@ -33,7 +33,7 @@ module.exports = function (req, res, url) {
 
 	var attrs, params, title;
 	switch (url.pathname) {
-		case "/character_creator/new_char": {
+		case "/cc": {
 			title = "Character Creator";
 			attrs = {
 				data: process.env.SWF_URL + "/cc.swf", // data: 'cc.swf',
@@ -54,7 +54,7 @@ module.exports = function (req, res, url) {
 			break;
 		}
 		
-		case "/character_creator": {
+		case "/cc_browser": {
 			title = "CC Browser";
 			attrs = {
 				data: process.env.SWF_URL + "/cc_browser.swf", // data: 'cc_browser.swf',
