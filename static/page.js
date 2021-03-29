@@ -106,7 +106,7 @@ module.exports = function (req, res, url) {
 				clientThemePath: process.env.CLIENT_URL + "/<client_theme>",
 				userId: "0MkbIhl0ecnE","numContact":"0","ut":30,"ve":false,
 				isEmbed: 0,"nextUrl":"/html/list.html",
-				lid :"0","ctc":"go","themeColor":"silver","tlang":"en_US","siteId":"13", "appCode":"go",
+				lid :"11","ctc":"go","themeColor":"silver","tlang":"en_US","siteId":"13", "appCode":"go",
 				lang: "en","tmcc":4048901,
 			        u_info :"OjI6SVkxU3FJV1BablhsMlVVeWdNelJfQTBkYTZqYWFEU0ZiMHZSRERoU0Z3TitzUUs0ZmZ1Y3FvVklsMDJFbTZWSWRtSXh5dUJRU0VQU0puVk12MlVSWFlaQkJ3OVpSQVU4R3FYeFRY",
 				free_trial :1,"tm":"FIN","tray":"custom","isWide":1,"newusr":1,"goteam_draft_only":0
