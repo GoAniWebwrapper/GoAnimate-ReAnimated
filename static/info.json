@@ -49,7 +49,7 @@
 			}
 		},
 		"/videos/([^?]+html).*": {
-			"contentReplace": false,
+			"contentReplace": true,
 			"regexLink": "pages/html/$1",
 			"headers": {
 				"Content-Type": "text/html; charset=UTF-8"
