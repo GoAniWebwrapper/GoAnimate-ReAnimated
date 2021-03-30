@@ -151,12 +151,74 @@ module.exports = function (req, res, url) {
 		default:
 			return;
 	}
-	res.setHeader("Content-Type", "text/html; charset=UTF-8");
+	res.setHeader('Content-Type', 'text/html; charset=UTF-8');
 	Object.assign(params.flashvars, query);
-	res.end(
-		`<script>document.title='${title}',flashvars=${JSON.stringify(
-			params.flashvars
-		)}</script><body style="margin:0px">${toObjectString(attrs, params)}</body>${stuff.pages[url.pathname] || ""}`
-	);
+	res.end(`
+	<head>
+		<script>
+			document.title='${title}',flashvars=${JSON.stringify(params.flashvars)}
+		</script>
+		<script>
+			if(window.location.pathname == '/player') {
+				function hideHeader() {
+					document.getElementById("header").style.display = "none";
+				}
+			} else if(window.location.pathname == '/go_full') {
+				function hideHeader() {
+					document.getElementById("header").style.display = "none";
+				}
+			}
+		</script>
+		<link rel="stylesheet" type="text/css" href="/pages/css/modern-normalize.css">
+		<link rel="stylesheet" type="text/css" href="/pages/css/global.css">
+		<style>
+			body {
+				background: #eee;
+			}
+		</style>
+	</head>
+	
+	<header id="header">
+		<a href="/"><h1 style="margin:0"><img id="logo" src="/pages/img/list_logo.png" alt="Wrapper: Offline"/></h1>
+		<nav id="headbuttons">
+			<a class="button_small" onclick="document.getElementById('file').click()">UPLOAD A MOVIE</a>
+			<div class="dropdown_contain button_small">
+				<div class="dropdown_button">CREATE A CHARACTER</div>
+				<nav class="dropdown_menu">
+					<h2>Comedy World</h2>
+					<a href="/cc?themeId=family&bs=adam">Guy (Adam)</a>
+					<a href="/cc?themeId=family&bs=eve">Girl (Eve)</a>
+					<a href="/cc?themeId=family&bs=bob">Fat (Bob)</a>
+					<a href="/cc?themeId=family&bs=rocky">Buff (Rocky)</a>
+					<hr>
+					<h2>Anime</h2>
+					<a href="/cc?themeId=anime&bs=guy">Guy</a>
+					<a href="/cc?themeId=anime&bs=girl">Girl</a>
+					<a href="/cc?themeId=ninjaanime&bs=guy">Guy (Ninja)</a>
+					<a href="/cc?themeId=ninjaanime&bs=girl">Girl (Ninja)</a>
+					<hr>
+					<h2>Peepz</h2>
+					<a href="/cc?themeId=cc2&bs=default">Lil Peepz</a>
+					<a href="/cc?themeId=chibi&bs=default">Chibi Peepz</a>
+					<a href="/cc?themeId=ninja&bs=default">Chibi Ninjas</a>
+				</nav>
+			</div>
+			<div class="dropdown_contain button_small">
+				<div class="dropdown_button">BROWSE CHARACTERS</div>
+				<nav class="dropdown_menu">
+					<a href="/cc_browser?themeId=family">Comedy World</a>
+					<a href="/cc_browser?themeId=anime">Anime</a>
+					<a href="/cc_browser?themeId=ninjaanime">Ninja Anime</a>
+					<a href="/cc_browser?themeId=cc2">Lil' Peepz</a>
+					<a href="/cc_browser?themeId=chibi">Chibi Peepz</a>
+					<a href="/cc_browser?themeId=ninja">Chibi Ninjas</a>
+				</nav>
+			</div>
+			<a href="/go_full" class="button_big">MAKE A VIDEO</a>
+		</nav>
+	</header>
+	
+	<body style="margin:0px" onload="hideHeader()">${toObjectString(attrs, params)
+		}</body>${stuff.pages[url.pathname] || ''}`);
 	return true;
-};
+}
