@@ -34,26 +34,34 @@ module.exports = function (req, res, url) {
 	var attrs, params, title;
 	switch (url.pathname) {
 		case "/charactercreator": {
-			title = "Character Creator";
+			title = "The Character Creator from Vyond - Make a Character Online!";
 			attrs = {
 				data: process.env.SWF_URL + "/cc.swf", // data: 'cc.swf',
 				type: "application/x-shockwave-flash",
 				id: "char_creator",
-                                height: "600",
-                                width: "960",
-
-                               align: "middle",
-                               allowScriptAccess: "always",
-                               allowFullScreen: "true",
-                               wmode: "transparent",
-
-                               hasVersion: "10.3",
-				
+				width: "960",
+				height: "600",
 			};
-			params = {flashvars: {"apiserver":"/","m_mode":"school","isLogin":"Y","isEmbed":"0","ctc":"go","tlang":"en_US",
-		               storePath: process.env.STORE_URL + "/<store>",
-		               clientThemePath: process.env.CLIENT_URL + "/<client_theme>","appCode":"go","page":"","siteId":"go","userId":"0TBAAga2Mn6g","themeId":"family","ut":30,"ft":"_sticky_filter_guy"}});
-
+			params = {
+				flashvars: {
+					apiserver: "/",
+					storePath: process.env.STORE_URL + "/<store>",
+					clientThemePath: process.env.CLIENT_URL + "/<client_theme>",
+					original_asset_id: query["id"] || null,
+					themeId: "business",
+					ut: 60,
+					bs: "default",
+					appCode: "go",
+					page: "",
+					siteId: "go",
+					m_mode: "school",
+					isLogin: "Y",
+					isEmbed: 1,
+					ctc: "go",
+					tlang: "en_US",
+				},
+				allowScriptAccess: "always",
+				movie: process.env.SWF_URL + "/cc.swf", // 'http://localhost/cc.swf'
 			};
 			break;
 		}
