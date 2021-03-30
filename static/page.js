@@ -44,7 +44,7 @@ module.exports = function (req, res, url) {
 			};
 			params = {
 				flashvars: {
-					apiserver: "https://ga.vyond.com",
+					apiserver: "/",
 					storePath: process.env.STORE_URL + "/<store>",
 					clientThemePath: process.env.CLIENT_URL + "/<client_theme>",
 					original_asset_id: query["id"] || null,
