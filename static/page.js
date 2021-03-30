@@ -163,20 +163,19 @@ module.exports = function (req, res, url) {
 				function hideHeader() {
 					document.getElementById("header").style.display = "none";
 				}
-			} else if(window.location.pathname == '/go_full') {
+			} else if(window.location.pathname == '/videomaker/full') {
 				function hideHeader() {
 					document.getElementById("header").style.display = "none";
 				}
 			}
 		</script>
-<link href="https://d2bm7x1jqouzel.cloudfront.net/fonts/1/sailec.css" rel="stylesheet" type="text/css">
-<link href="https://d3v4eglovri8yt.cloudfront.net/static/add8e214e09bd155/go/css/common_combined.css.gz.css" rel="stylesheet" type="text/css">
-
-<link href="https://d3v4eglovri8yt.cloudfront.net/static/add8e214e09bd155/go/css/watermark.css.gz.css" rel="stylesheet" type="text/css">
-<link href="https://d3v4eglovri8yt.cloudfront.net/static/add8e214e09bd155/go/css/video.css.gz.css" rel="stylesheet" type="text/css">
-<link href="https://d3v4eglovri8yt.cloudfront.net/static/add8e214e09bd155/go/css/myvideos.css.gz.css" rel="stylesheet" type="text/css">
-<link href="https://d3v4eglovri8yt.cloudfront.net/static/add8e214e09bd155/go/css/video_export.css.gz.css" rel="stylesheet" type="text/css">
-<link href="https://d3v4eglovri8yt.cloudfront.net/static/add8e214e09bd155/go/css/vm5_alpha/banner.css.gz.css" rel="stylesheet" type="text/css">
+                <link href="https://d2bm7x1jqouzel.cloudfront.net/fonts/1/sailec.css" rel="stylesheet" type="text/css">
+                <link href="https://d3v4eglovri8yt.cloudfront.net/static/add8e214e09bd155/go/css/common_combined.css.gz.css" rel="stylesheet" type="text/css">
+                <link href="https://d3v4eglovri8yt.cloudfront.net/static/add8e214e09bd155/go/css/watermark.css.gz.css" rel="stylesheet" type="text/css">
+                <link href="https://d3v4eglovri8yt.cloudfront.net/static/add8e214e09bd155/go/css/video.css.gz.css" rel="stylesheet" type="text/css">
+                <link href="https://d3v4eglovri8yt.cloudfront.net/static/add8e214e09bd155/go/css/myvideos.css.gz.css" rel="stylesheet" type="text/css">
+                <link href="https://d3v4eglovri8yt.cloudfront.net/static/add8e214e09bd155/go/css/video_export.css.gz.css" rel="stylesheet" type="text/css">
+                <link href="https://d3v4eglovri8yt.cloudfront.net/static/add8e214e09bd155/go/css/vm5_alpha/banner.css.gz.css" rel="stylesheet" type="text/css">
 <style>
 			body {
 				background: #eee;
@@ -193,7 +192,7 @@ module.exports = function (req, res, url) {
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                   </button>
-                  <a class="navbar-brand" href="list.html" title="Vyond">
+                  <a class="navbar-brand" href="/html/list.html" title="Vyond">
                       <img alt="Vyond" src="https://d3v4eglovri8yt.cloudfront.net/static/add8e214e09bd155/go/img/vyond/vyond_logo_legacy.png">
                   </a>
             </div>
@@ -217,8 +216,8 @@ module.exports = function (req, res, url) {
 </li>
 <li>
                     <li>
-                        <a class="hidden-sm hidden-md hidden-lg" href="./videomaker.html">Make a Video</a>
-                        <span class="site-nav-btn hidden-xs"><a class="btn btn-orange" href="./videomaker.html">Make a Video</a></span>
+                        <a class="hidden-sm hidden-md hidden-lg" href="/html/videomaker.html">Make a Video</a>
+                        <span class="site-nav-btn hidden-xs"><a class="btn btn-orange" href="/html/videomaker.html">Make a Video</a></span>
                     </li>
 <li class="dropdown">
     <a class="dropdown-toggle" href="https://app.vyond.com/v2/profile" data-toggle="dropdown">
