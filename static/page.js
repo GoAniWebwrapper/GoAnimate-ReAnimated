@@ -41,6 +41,8 @@ module.exports = function (req, res, url) {
 				id: "char_creator",
 				width: "960",
 				height: "600",
+				
+				align: "middle",
 			};
 			params = {
 				flashvars: {
