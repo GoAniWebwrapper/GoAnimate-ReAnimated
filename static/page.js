@@ -41,7 +41,13 @@ module.exports = function (req, res, url) {
 				id: "char_creator",
 				width: "960",
 				height: "600",
+				
 				align: "middle",
+				allowScriptAccess: "always",
+                                allowFullScreen: "true",
+                                wmode: "transparent",
+
+                                hasVersion: "10.3",
 			};
 			params = {
 				flashvars: {
@@ -61,7 +67,6 @@ module.exports = function (req, res, url) {
 					ctc: "go",
 					tlang: "en_US",
 				},
-				allowScriptAccess: "always",
 				movie: process.env.SWF_URL + "/cc.swf", // 'http://localhost/cc.swf'
 			};
 			break;
