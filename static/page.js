@@ -39,11 +39,12 @@ module.exports = function (req, res, url) {
 				data: process.env.SWF_URL + "/cc.swf", // data: 'cc.swf',
 				type: "application/x-shockwave-flash",
 				id: "char_creator",
-                                height: 600,
-                                width: 960,
+                                height: "600",
+                                width: "960",
 
                                align: "middle",
                                allowScriptAccess: "always",
+                               allowFullScreen: "true",
                                wmode: "transparent",
 
                                hasVersion: "10.3",
