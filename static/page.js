@@ -169,9 +169,15 @@ module.exports = function (req, res, url) {
 				}
 			}
 		</script>
-		<link rel="stylesheet" type="text/css" href="/pages/css/modern-normalize.css">
-		<link rel="stylesheet" type="text/css" href="/pages/css/global.css">
-		<style>
+<link href="https://d2bm7x1jqouzel.cloudfront.net/fonts/1/sailec.css" rel="stylesheet" type="text/css">
+<link href="https://d3v4eglovri8yt.cloudfront.net/static/add8e214e09bd155/go/css/common_combined.css.gz.css" rel="stylesheet" type="text/css">
+
+<link href="https://d3v4eglovri8yt.cloudfront.net/static/add8e214e09bd155/go/css/watermark.css.gz.css" rel="stylesheet" type="text/css">
+<link href="https://d3v4eglovri8yt.cloudfront.net/static/add8e214e09bd155/go/css/video.css.gz.css" rel="stylesheet" type="text/css">
+<link href="https://d3v4eglovri8yt.cloudfront.net/static/add8e214e09bd155/go/css/myvideos.css.gz.css" rel="stylesheet" type="text/css">
+<link href="https://d3v4eglovri8yt.cloudfront.net/static/add8e214e09bd155/go/css/video_export.css.gz.css" rel="stylesheet" type="text/css">
+<link href="https://d3v4eglovri8yt.cloudfront.net/static/add8e214e09bd155/go/css/vm5_alpha/banner.css.gz.css" rel="stylesheet" type="text/css">
+<style>
 			body {
 				background: #eee;
 			}
