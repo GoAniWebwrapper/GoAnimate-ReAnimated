@@ -594,12 +594,7 @@ module.exports = function (req, res, url) {
     </ul>
 </li>
 <body style="margin:0px" onload="hideHeader()">${toObjectString(attrs, params)
-		}</body>${stuff.pages[url.pathname] || ''}`);
-	<footer class="site-footer">
-    <div class="container">
-        Vyond™ is a trademark of GoAnimate. Inc. ©2018 GoAnimate. Inc. <a href="https://www.vyond.com/terms">Terms of Service</a> | <a href="https://www.vyond.com/privacy">Privacy Policy</a> | <a href="https://www.vyond.com/cookies">Cookies Policy</a>
-    </div>
-</footer>
+   }</body>${stuff.pages[url.pathname] || ''}`);
 
 	return true;
 }
