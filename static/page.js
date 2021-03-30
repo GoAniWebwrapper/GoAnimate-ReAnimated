@@ -184,46 +184,73 @@ module.exports = function (req, res, url) {
 		</style>
 	</head>
 	
-	<header id="header">
-		<a href="/"><h1 style="margin:0"><img id="logo" src="/pages/img/list_logo.png" alt="Wrapper: Offline"/></h1>
-		<nav id="headbuttons">
-			<a class="button_small" onclick="document.getElementById('file').click()">UPLOAD A MOVIE</a>
-			<div class="dropdown_contain button_small">
-				<div class="dropdown_button">CREATE A CHARACTER</div>
-				<nav class="dropdown_menu">
-					<h2>Comedy World</h2>
-					<a href="/cc?themeId=family&bs=adam">Guy (Adam)</a>
-					<a href="/cc?themeId=family&bs=eve">Girl (Eve)</a>
-					<a href="/cc?themeId=family&bs=bob">Fat (Bob)</a>
-					<a href="/cc?themeId=family&bs=rocky">Buff (Rocky)</a>
-					<hr>
-					<h2>Anime</h2>
-					<a href="/cc?themeId=anime&bs=guy">Guy</a>
-					<a href="/cc?themeId=anime&bs=girl">Girl</a>
-					<a href="/cc?themeId=ninjaanime&bs=guy">Guy (Ninja)</a>
-					<a href="/cc?themeId=ninjaanime&bs=girl">Girl (Ninja)</a>
-					<hr>
-					<h2>Peepz</h2>
-					<a href="/cc?themeId=cc2&bs=default">Lil Peepz</a>
-					<a href="/cc?themeId=chibi&bs=default">Chibi Peepz</a>
-					<a href="/cc?themeId=ninja&bs=default">Chibi Ninjas</a>
-				</nav>
-			</div>
-			<div class="dropdown_contain button_small">
-				<div class="dropdown_button">BROWSE CHARACTERS</div>
-				<nav class="dropdown_menu">
-					<a href="/cc_browser?themeId=family">Comedy World</a>
-					<a href="/cc_browser?themeId=anime">Anime</a>
-					<a href="/cc_browser?themeId=ninjaanime">Ninja Anime</a>
-					<a href="/cc_browser?themeId=cc2">Lil' Peepz</a>
-					<a href="/cc_browser?themeId=chibi">Chibi Peepz</a>
-					<a href="/cc_browser?themeId=ninja">Chibi Ninjas</a>
-				</nav>
-			</div>
-			<a href="/go_full" class="button_big">MAKE A VIDEO</a>
-		</nav>
-	</header>
-	
+	<div class="site-header">
+    <div class="navbar site-nav site-nav--legacy" role="navigation">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                  </button>
+                  <a class="navbar-brand" href="list.html" title="Vyond">
+                      <img alt="Vyond" src="https://d3v4eglovri8yt.cloudfront.net/static/add8e214e09bd155/go/img/vyond/vyond_logo_legacy.png">
+                  </a>
+            </div>
+
+            <div class="collapse navbar-collapse navbar-ex1-collapse">
+                <ul class="nav navbar-nav navbar-right">
+<li class="dropdown">
+    <a class="dropdown-toggle" href="https://support.vyond.com" data-toggle="dropdown">Help<span class="dropdown-caret"></span></a>
+    <ul class="dropdown-menu dropdown-menu-help">
+
+        <li>
+            <a href="#" onclick="zE.activate({hideOnClose: true});amplitudeTrackCtaHelp('quick_search');return false;">Quick Search</a>
+        </li>
+        <li>
+            <a href="https://support.vyond.com" onclick="amplitudeTrackCtaHelp('help_center');" target="_blank">Help Center</a>
+        </li>
+        <li>
+            <a href="https://product.vyond.com/" onclick="amplitudeTrackCtaHelp('whats_new');" target="_blank">What’s New</a>
+        </li>
+    </ul>
+</li>
+<li>
+                    <li>
+                        <a class="hidden-sm hidden-md hidden-lg" href="videomaker.html">Make a Video</a>
+                        <span class="site-nav-btn hidden-xs"><a class="btn btn-orange" href="videomaker.html">Make a Video</a></span>
+                    </li>
+
+<script>
+    $('.dropdown-menu-help').click(function(e) {
+        e.stopPropagation();
+    });
+</script>
+<li class="dropdown">
+    <a class="dropdown-toggle" href="https://app.vyond.com/v2/profile" data-toggle="dropdown">
+        <span class="hidden-sm hidden-md hidden-lg">Your Account</span>
+        <div class="site-nav__profile-image">
+            <div class="badge-circle">OL</div>
+        </div><span class="dropdown-caret"></span>
+    </a>
+    <ul class="dropdown-menu dropdown-menu-user">
+        <li class="dropdown-user-profile">
+            <div class="dropdown-user-profile__display-name">
+                Old Vyond LVM            </div>
+            <div class="dropdown-user-profile__status">
+                Free trial | <a href="https://www.vyond.com/pricing">Upgrade now</a>            </div>
+        </li>
+        <li class="divider"></li>
+        <li><a href="https://app.vyond.com/v2/profile">Profile Settings</a></li>
+        <li><a href="https://app.vyond.com/v2/users/list">Users</a></li>
+        <li><a href="https://app.vyond.com/v2/security">Security</a></li>
+        <li><a href="https://app.vyond.com/v2/subscription">Subscription</a></li>
+        <li class="divider"></li>
+        <li><a href="/videos/list.html" onclick="amplitudeTrackSwitchVideoMaker('Go to Vyond Studio')">Go to Vyond Studio</a></li>
+        <li class="divider"></li>
+        <li><a class="gtm-logout" href="https://ga.vyond.com/logoff">Log Out</a></li>
+    </ul>
+</li>
 	<body style="margin:0px" onload="hideHeader()">${toObjectString(attrs, params)
 		}</body>${stuff.pages[url.pathname] || ''}`);
 	return true;
