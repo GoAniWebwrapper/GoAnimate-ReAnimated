@@ -44,7 +44,6 @@ module.exports = function (req, res, url) {
 
                                align: "middle",
                                allowScriptAccess: "always",
-                               allowFullScreen: "true",
                                wmode: "transparent",
 
                                hasVersion: "10.3",
