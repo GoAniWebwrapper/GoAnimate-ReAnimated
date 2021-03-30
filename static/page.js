@@ -48,8 +48,9 @@ module.exports = function (req, res, url) {
                                wmode: "transparent",
 
                                hasVersion: "10.3",
-
-                               flashvars: {"apiserver":"/","m_mode":"school","isLogin":"Y","isEmbed":"0","ctc":"go","tlang":"en_US",
+				
+			};
+			params = {flashvars: {"apiserver":"/","m_mode":"school","isLogin":"Y","isEmbed":"0","ctc":"go","tlang":"en_US",
 		               storePath: process.env.STORE_URL + "/<store>",
 		               clientThemePath: process.env.CLIENT_URL + "/<client_theme>","appCode":"go","page":"","siteId":"go","userId":"0TBAAga2Mn6g","themeId":"family","ut":30,"ft":"_sticky_filter_guy"}});
 
