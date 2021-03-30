@@ -105,7 +105,7 @@ module.exports = function (req, res, url) {
 				query.movieId && query.movieId.startsWith("m")
 					? query.movieId
 					: `m-${fUtil[query.Autosave ? "getNextFileId" : "fillNextFileId"]("movie-", ".xml")}`;
-			title = "Video Editor";
+			title = "The Video Maker from Vyond - Make a Video for YouTube!";
 			attrs = {
 				data: process.env.SWF_URL + "/go_full.swf",
 				type: "application/x-shockwave-flash",
