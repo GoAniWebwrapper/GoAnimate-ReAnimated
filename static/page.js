@@ -45,21 +45,21 @@ module.exports = function (req, res, url) {
 			params = {
 				flashvars: {
 					apiserver: "/",
+					m_mode: "school",
+					isLogin: "Y",
+					isEmbed: "0",
+					ctc: "go",
+					tlang: "en_US",
 					storePath: process.env.STORE_URL + "/<store>",
 					clientThemePath: process.env.CLIENT_URL + "/<client_theme>",
-					original_asset_id: query["id"] || null,
-					themeId: "business",
-					ut: 60,
-					bs: "default",
 					appCode: "go",
 					page: "",
 					siteId: "go",
-					m_mode: "school",
-					isLogin: "Y",
-					isEmbed: 1,
-					ctc: "go",
-					tlang: "en_US",
-				},
+					userId:"0TBAAga2Mn6g",
+					themeId:"family",
+					ut:30,
+					ft:"_sticky_filter_guy"},
+
 				allowScriptAccess: "always",
 				movie: process.env.SWF_URL + "/cc.swf", // 'http://localhost/cc.swf'
 			};
