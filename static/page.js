@@ -39,20 +39,12 @@ module.exports = function (req, res, url) {
 				data: process.env.SWF_URL + "/cc.swf", // data: 'cc.swf',
 				type: "application/x-shockwave-flash",
 				id: "char_creator",
-                                height: 600,
-                                width: 960,
-
-                                align: "middle",
-                                allowScriptAccess: "always",
-                                allowFullScreen: "true",
-                                wmode: "transparent",
-
-                                hasVersion: "10.3",
-
+				width: "100%",
+				height: "100%",
 			};
 			params = {
 				flashvars: {
-					apiserver: "/",
+					apiserver: "https://ga.vyond.com",
 					storePath: process.env.STORE_URL + "/<store>",
 					clientThemePath: process.env.CLIENT_URL + "/<client_theme>",
 					original_asset_id: query["id"] || null,
@@ -68,10 +60,12 @@ module.exports = function (req, res, url) {
 					ctc: "go",
 					tlang: "en_US",
 				},
+				allowScriptAccess: "always",
 				movie: process.env.SWF_URL + "/cc.swf", // 'http://localhost/cc.swf'
 			};
 			break;
 		}
+		
 		
 		case "/cc_browser": {
 			title = "CC Browser";
