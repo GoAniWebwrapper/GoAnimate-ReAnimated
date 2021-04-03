@@ -16,12 +16,12 @@ module.exports = function (req, res, url) {
 		if (!files.import) return;
 		var path = files.import.path;
 		var buffer = fs.readFileSync(path);
-		var numId = fUtil.getNextFileId("orignal_asset-", ".xml");
+		var numId = fUtil.getNextFileId("original_asset-", ".xml");
 		parse.unpackXml(buffer, `m-${numId}`);
 		fs.unlinkSync(path);
 
 		res.statusCode = 302;
-		var url = `/charactercreator?orignal_asset_id=m-${numId}`;
+		var url = `/charactercreator?original_asset_id=m-${numId}`;
 		res.setHeader("Location", url);
 		res.end();
 	});
