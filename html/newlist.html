@@ -558,7 +558,12 @@ transition: none !important;
 	<form enctype="multipart/form-data" action="/upload_movie" method="post">
 		<input id="file" type="file" onchange="this.form.submit()" name="import" accept=".xml">
 	</form>
-	<script>
+	</body>
+
+<form enctype='multipart/form-data' action='/upload_character' method='post'>
+	<input id='character_file' type="file" onchange="this.form.submit()" name='import' accept=".xml" />
+</form>
+          <script>
 		var json;
 		var tbody = document.getElementsByTagName('tbody')[0];
 		var loadMore = document.getElementById('load_more');
